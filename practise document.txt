@@ -1,0 +1,131 @@
+/home: home directory for all users.
+
+/root: home directory for root user
+
+root user: root user is the admin for the o.s which has access to all files.
+
+/boot: all bootable files rhti hai.
+
+/etc: *it is the directory that contains all configuration files.
+
+/usr: by default all the softwares are installed here
+
+/bin: it contains command used by all users including root users
+
+/sbin: command used by only root user.
+
+/opt: optional application software package.
+
+/dev: essentials device files...
+
+
+				--------------------- how to create a file --------------
+
+1) touch
+2) cat 
+3) vi 
+4) nano
+
+a) CAT:
+
+it is used to concatinate two seperate files into one single files.
+
+it has :
+
+create a file
+copy a file
+'concatenate a file
+tac : to see content from bottom to top.
+
+
+
+
+
+				----- TOUCH -----------
+
+touch file1 file2 file3
+
+touch -a file1 (change the access time)
+touch -m file4 (change modified time)
+
+
+
+				---------------- Vi editor ------------------
+
+A programer text editor
+
+
+					--------------- create a directory ------------------
+mkdir folder1 folder 2
+
+mkdir -p folder1/folder2
+
+					----- some more command-----
+
+yum install httpd
+
+yum is basically used for linux for...
+for ubuntu version:
+
+apt-get install httpd
+sudo su: to give root permission
+
+
+				----------------- to create auser in linux --------------------	
+
+
+-> useradd shubham
+-> cat /etc/passwd
+-> groupadd technical_shubham
+-> cat /etc/group
+
+
+* to add a user in our group
+
+-> gpasswd -a aman technical_shubham
+
+
+-					---------- some more commands --------------------
+
+a) tar: tar is used to combine multiple files into one.
+b) gzip: gzip is used to compress a file
+
+
+
+			------------------- commands to create a git repo ------------------	
+
+git init
+git add .
+git commit -m " This is my first commit "
+git remote add origin <url>
+git push -u origin master
+
+
+**** suppose i want to pull a file from git 
+
+git init
+git remote add origin <url>
+git pull -u origin master
+git log ---> to check all commit and their id
+git show <commit-ID>
+
+
+************ to create a new branch to work seperatly:
+
+git branch - > give list of all branches
+git branch <new-branch>
+git checkout new-branch-> to get inside your branch.
+
+git branch -d <branch-name>
+
+
+to merge a branch: git merge <branch-name>
+
+
+git stashing: temporary space : 
+git stash list
+git stash
+git stash apply stash@{0}
+git stash clear
+
+
